@@ -1,4 +1,4 @@
-package LinkedList;
+package List.LinkedList;
 
 import java.util.ArrayList;
 import java.util.Iterator;

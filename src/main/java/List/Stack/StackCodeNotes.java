@@ -1,4 +1,4 @@
-package Stack;
+package List.Stack;
 
 import java.util.Iterator;
 import java.util.LinkedList;
