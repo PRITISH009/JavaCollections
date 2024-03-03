@@ -1,10 +1,8 @@
 package ArrayList;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 
-public class ArrayListExamples {
+public class ArrayListCodeNotes {
    public static void main(String[] args) {
        // Declaration
        // Default capacity is 10
