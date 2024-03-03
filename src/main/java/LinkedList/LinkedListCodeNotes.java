@@ -40,8 +40,10 @@ public class LinkedListCodeNotes {
 
         // Setting element at a certain index -
         linkedList.set(1, 100);
-
         System.out.println("Linked List - " + linkedList);
+
+        // Checking if an element exists in LinkedList -
+        System.out.println("Linked List Contains 4 - " + linkedList.contains(4));
 
         // Removing Element from a LinkedList -
         linkedList.remove(4); // Removing 4th index
