@@ -45,6 +45,12 @@ public class StackCodeNotes {
         stack.set(2, 100);
         System.out.println("Stack - " + stack);
 
+        // Searching an Element in Stack
+        System.out.println("Search Stack for 100 - " + stack.search(100)); // Returns 1 based index from top, -1 if not exists
+        System.out.println("Search Stack for 2 - " + stack.search(2)); // Returns 1 based index from top, -1 if not exists
+        System.out.println("Search Stack for 1 - " + stack.search(1)); // Returns 1 based index from top, -1 if not exists
+        System.out.println("Stack Contains 2 - " + stack.contains(2));
+
         // Clear all elements in a Stack
         stack.clear();
         System.out.println("Stack - " + stack);
