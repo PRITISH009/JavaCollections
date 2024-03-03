@@ -1,6 +1,8 @@
 package Vector;
 
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.ListIterator;
 import java.util.Vector;
 
 public class VectorCodeNotes {
@@ -38,6 +40,9 @@ public class VectorCodeNotes {
 
         System.out.println("Vector - " + vector);
 
+        // Getting Element at a particular index
+        System.out.println("Element at index 4 - " + vector.get(4));
+
         // Setting Element at a particular Index
         vector.set(1, 1000);
 
@@ -59,5 +64,45 @@ public class VectorCodeNotes {
         // Removing All Elements in the vector
         vector.clear();
 
+        // Iterating over a Vector
+        vector.add(1);
+        vector.add(2);
+        vector.add(3);
+        vector.add(4);
+        vector.add(5);
+
+        System.out.println("Iterating using For Loop");
+        for(int i = 0; i<vector.size(); i++) {
+            System.out.println("Element in Vector at index " + i + " - " + vector.get(i));
+        }
+
+        System.out.println("Iterating using Enhanced For");
+        for(Integer elem: vector) {
+            System.out.println("Element in Vector - " + elem);
+        }
+
+        System.out.println("Iterating using Iterator");
+        Iterator<Integer> it = vector.iterator();
+        while(it.hasNext()) {
+            System.out.println("Element in Vector - " + it.next());
+        }
+
+        System.out.println("Iterating using ListIterator");
+        ListIterator<Integer> listIt = vector.listIterator();
+        while(listIt.hasNext()) {
+            System.out.println("Element in Vector - " + listIt.next());
+        }
+
+        // After traversing once, the Iterator is now at the end hence we can do an additional thing
+        // in listIterator which we can't do in normal Iterator (Traversing Backwards)
+        // listIterator is bidirectional
+
+        while(listIt.hasPrevious()) {
+            System.out.println("Element in Vector in Reverse Order - " + listIt.previous());
+        }
+
+        // Using Lambda Function using removeIf
+        vector.removeIf(n -> (n % 2 == 0)); // Removed all even elements
+        System.out.println("Vector - " + vector);
     }
 }
