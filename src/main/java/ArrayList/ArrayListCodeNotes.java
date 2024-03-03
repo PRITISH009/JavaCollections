@@ -6,6 +6,7 @@ public class ArrayListCodeNotes {
    public static void main(String[] args) {
        // Declaration
        // Default capacity is 10
+       // Extends Random Access Interface (Marker Interface)
        ArrayList<Integer> list = new ArrayList<>();
 
        // Declaration with size
@@ -42,6 +43,9 @@ public class ArrayListCodeNotes {
        list.set(3, 1000);
 
        System.out.println("List - " + list);
+
+       // Checking if an Element Exists in Array List
+       System.out.println("List Contains 1 - " + list.contains(1));
 
 //       list.set(900, 100); // Would fail here
 
