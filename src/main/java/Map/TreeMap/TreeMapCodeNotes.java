@@ -143,7 +143,7 @@ public class TreeMapCodeNotes {
 
         // Using Comparable Interface will not make any sense or difference as the objects in hashmap are compared
         // on keys not values
-        
+
 //        class Student implements Comparable<Student> {
 //            String firstName;
 //            String lastName;
